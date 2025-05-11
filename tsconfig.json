@@ -11,7 +11,8 @@
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "resolveJsonModule": true,
-      "baseUrl": "./"
+      "baseUrl": "./",
+      "allowSyntheticDefaultImports": true
     },
     "include": ["src", "controllers", "models", "routes", "middleware"],
     "exclude": ["node_modules", "dist"]
