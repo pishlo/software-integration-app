@@ -27,17 +27,15 @@ try {
   console.log('📡 Connecting to MongoDB...');
   mongoose.connect('mongodb://localhost:27017/epita');
   logger.info('✅ MongoDB Connected');
-  console.log('✅ MongoDB Connected');
+
 } catch (error) {
   logger.error('❌ Error connecting to MongoDB: ' + error);
-  console.error('❌ MongoDB Connection Failed:', error);
+
 }
 
 // Register core middlewares
 const registerCoreMiddleWare = (): void => {
   try {
-    console.log('🔧 Registering core middleware...');
-
     app.use(
       session({
         secret: '1234',
@@ -62,8 +60,6 @@ const registerCoreMiddleWare = (): void => {
     app.use(cors());
     app.use(helmet.default());
 
-    console.log('✅ Middleware registered: JSON, CORS, Helmet, Logger');
-
     app.use(validator);
     app.use(healthCheck);
 
@@ -79,10 +75,8 @@ const registerCoreMiddleWare = (): void => {
 
     app.use(notFound);
     logger.http('✅ Done registering all middlewares');
-    console.log('✅ Middleware setup complete');
   } catch (err) {
     logger.error('❌ Error thrown while executing registerCoreMiddleWare');
-    console.error('❌ Middleware registration failed:', err);
     process.exit(1);
   }
 };
@@ -91,7 +85,6 @@ const registerCoreMiddleWare = (): void => {
 const handleError = (): void => {
   process.on('uncaughtException', (err: Error) => {
     logger.error(`💥 UNCAUGHT_EXCEPTION: ${JSON.stringify(err.stack)}`);
-    console.error('💥 UNCAUGHT_EXCEPTION:', err.stack);
   });
 };
 
@@ -102,12 +95,10 @@ const startApp = (): void => {
     registerCoreMiddleWare();
     app.listen(PORT, () => {
       logger.info(`🟢 Listening on http://127.0.0.1:${PORT}`);
-      console.log(`🟢 Server is running on http://127.0.0.1:${PORT}`);
     });
     handleError();
   } catch (err) {
     logger.error(`startup :: Error while booting the application ${JSON.stringify(err, undefined, 2)}`);
-    console.error('❌ Startup failed:', err);
     throw err;
   }
 };

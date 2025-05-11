@@ -16,3 +16,15 @@ error: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.
 [2025-05-11T22:14:44.707Z] HTTP: ✅ Done registering all middlewares
 [2025-05-11T22:14:44.713Z] INFO: 🟢 Listening on http://127.0.0.1:3000
 [2025-05-11T22:14:45.149Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:08:42.655Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:08:42.663Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:08:42.666Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:08:43.020Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:09:02.488Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:09:02.492Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:09:02.495Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:09:02.832Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:17:12.007Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:17:12.013Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:17:12.017Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:17:12.357Z] INFO: ✅ PostgreSQL Connected
