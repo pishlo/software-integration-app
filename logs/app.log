@@ -1,0 +1,42 @@
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:17:08.155Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:17:08.166Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:17:08.304Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:19:13.269Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:19:13.276Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:19:13.376Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:21:52.551Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:21:52.558Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:21:52.650Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:23:34.492Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:23:34.503Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:23:34.652Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:23:50.577Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:23:50.585Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:23:50.678Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:30:06.622Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:30:06.635Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:30:06.727Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:31:54.478Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:31:54.486Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:31:54.625Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:11.770Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:11.778Z"}
+{"level":"error","message":"PostgreSQL Connection Failed: err.message","timestamp":"2025-05-11T14:33:11.876Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:19.691Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:19.699Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:19.796Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:22.531Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:22.538Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:22.644Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:31.536Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:31.543Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:31.687Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:47.967Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:47.975Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:48.106Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:56.679Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:56.685Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:56.785Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:35:52.670Z"}
+{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:35:52.678Z"}
+{"level":"info","message":"PostgreSQL Connected","timestamp":"2025-05-11T14:35:52.984Z"}

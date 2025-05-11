@@ -1,4 +1,11 @@
-require('dotenv').config();
+// index.js
+const dotenv = require('dotenv');
+const path = require('path');
+
+// Load environment-specific .env file
+const envFile = `.env.${process.env.NODE_ENV || 'dev'}`;
+dotenv.config({ path: path.resolve(process.cwd(), envFile) });
+
 const startApp = require('./boot/setup').startApp;
 
 (() => {
