@@ -1,0 +1,18 @@
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:06.085Z"}
+{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:06.094Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:06.137Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:14.382Z"}
+{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:14.390Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:14.433Z"}
+info: MongoDB Connected {"timestamp":"2025-05-11T21:02:11.790Z"}
+http: Done registering all middlewares {"timestamp":"2025-05-11T21:02:11.793Z"}
+info: Listening on 127.0.0.1:3000 {"timestamp":"2025-05-11T21:02:11.797Z"}
+error: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.20", user "postgres", database "si_dev_db", no encryption {"timestamp":"2025-05-11T21:02:11.907Z"}
+[2025-05-11T22:11:34.632Z] INFO: ✅ MongoDB Connected
+[2025-05-11T22:11:34.639Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T22:11:34.648Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T22:11:34.726Z] ERROR: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.20", user "postgres", database "si_dev_db", no encryption
+[2025-05-11T22:14:44.702Z] INFO: ✅ MongoDB Connected
+[2025-05-11T22:14:44.707Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T22:14:44.713Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T22:14:45.149Z] INFO: ✅ PostgreSQL Connected
