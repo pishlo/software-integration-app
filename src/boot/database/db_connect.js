@@ -8,6 +8,9 @@ const db_config = {
   password: process.env.DB_PASSWORD,
   port: 5432,
   max: 10,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 };
 
 let db_connection;
@@ -25,6 +28,7 @@ function startConnection() {
       logger.info('PostgreSQL Connected');
     } else {
       logger.error('PostgreSQL Connection Failed');
+      console.log(err.message)
     }
   });
 
