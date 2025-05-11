@@ -6,6 +6,6 @@ const statusCodes = {
   badGateway: 502,
   unauthorized: 401,
   userAlreadyExists: 409,
-};
+} as const;
 
 export default statusCodes;

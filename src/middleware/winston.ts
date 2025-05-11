@@ -1,34 +1,26 @@
-import winston from 'winston';
-
-
-const options = {
-  file: {
-    level: 'info',
-    filename: `./logs/app.log`,
-    handleException: true,
-    maxSize: 5242880, // ~5MB
-    maxFiles: 5,
-    format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
-  },
-  console: {
-    level: 'debug',
-    handleException: true,
-    format: winston.format.combine(winston.format.colorize(), winston.format.simple()),
-  },
-};
+import * as winston from 'winston';
+import { StreamOptions } from 'morgan';
 
 const logger = winston.createLogger({
+  level: 'http',
   transports: [
-    new winston.transports.File(options.file),
-    new winston.transports.Console(options.console),
+    new winston.transports.File({
+      filename: 'logs/app.log',
+      format: winston.format.combine(
+        winston.format.timestamp(),
+        winston.format.simple()
+      ),
+    }),
   ],
-  exitOnError: false,
 });
 
-logger.stream = {
+// Explicit type for morgan stream
+const stream: StreamOptions = {
   write: (message: string) => {
-    logger.info(message);
+    logger.http(message.trim());
   },
 };
+
+logger.stream = stream as any;
 
 export default logger;

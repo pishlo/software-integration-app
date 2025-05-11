@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import pool from '../boot/database/db_connect';
 import logger from '../middleware/winston';
-import * as statusCodes from '../constants/statusCodes';
+import statusCodes from '../constants/statusCodes';
 
 export const editPassword = async (req: Request & { user?: any }, res: Response) => {
   const { oldPassword, newPassword } = req.body;
