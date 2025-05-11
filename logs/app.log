@@ -1,6 +1,0 @@
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:06.085Z"}
-{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:06.094Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:06.137Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:14.382Z"}
-{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:14.390Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:14.433Z"}
