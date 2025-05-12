@@ -24,7 +24,7 @@ const signup = async (req: Request, res: Response): Promise<void> => {
     const user = await newUser.save();
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json({ message: 'failed to save user' });
+    res.status(500).json({ message: 'failed to save user',error });
   }
 };
 
@@ -68,7 +68,6 @@ const getUser = async (req: Request, res: Response): Promise<void> => {
   }
 
   try {
-
     if (!req.session.user) {
       res.status(401).json({ error: 'You are not authenticated' });
       return;

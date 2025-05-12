@@ -31,7 +31,8 @@ const db_connection = new Pool(db_config);
 types.setTypeParser(1082, (val: string) => val);
 
 // Verify the initial connection
-db_connection.connect()
+db_connection
+  .connect()
   .then((client: PoolClient) => {
     logger.info('✅ PostgreSQL Connected');
     client.release();

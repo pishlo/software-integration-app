@@ -6,7 +6,7 @@ dotenv.config({ path: path.resolve(process.cwd(), envFile) });
 
 import { startApp } from './boot/setup';
 
-(() => {
+(():void  => {
   try {
     startApp();
   } catch (error) {

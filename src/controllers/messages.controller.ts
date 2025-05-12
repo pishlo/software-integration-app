@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import messageModel from '../models/messageModel';
 
-
 const getMessages = async (_req: Request, res: Response): Promise<void> => {
   const messages = await messageModel.find({});
   res.status(200).json(messages);
@@ -54,11 +53,7 @@ const editMessage = async (req: Request, res: Response): Promise<void> => {
   }
 
   try {
-    const message = await messageModel.findByIdAndUpdate(
-      messageId,
-      { name },
-      { new: true }
-    );
+    const message = await messageModel.findByIdAndUpdate(messageId, { name }, { new: true });
     res.status(200).json(message);
   } catch (error: any) {
     console.error('Error while updating message:', error.message);

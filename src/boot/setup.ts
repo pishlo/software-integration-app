@@ -76,7 +76,7 @@ const registerCoreMiddleWare = (): void => {
     app.use(notFound);
     logger.http('✅ Done registering all middlewares');
   } catch (err) {
-    logger.error('❌ Error thrown while executing registerCoreMiddleWare');
+    logger.error('❌ Error thrown while executing registerCoreMiddleWare',err);
     process.exit(1);
   }
 };

@@ -19,9 +19,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     const result = await client.query('SELECT * FROM users WHERE email = $1;', [email]);
 
     if (result.rowCount) {
-      res
-        .status(statusCodes.userAlreadyExists)
-        .json({ message: 'User already has an account' });
+      res.status(statusCodes.userAlreadyExists).json({ message: 'User already has an account' });
       return;
     }
 
@@ -88,8 +86,6 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     }
   } catch (error: any) {
     logger.error(error.stack);
-    res
-      .status(statusCodes.queryError)
-      .json({ error: 'Exception occurred while logging in' });
+    res.status(statusCodes.queryError).json({ error: 'Exception occurred while logging in' });
   }
 };

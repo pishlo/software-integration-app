@@ -7,11 +7,7 @@ interface AuthenticatedRequest extends Request {
   user?: any;
 }
 
-const verifyToken = (
-  req: AuthenticatedRequest,
-  res: Response,
-  next: NextFunction
-): void => {
+const verifyToken = (req: AuthenticatedRequest, res: Response, next: NextFunction): void => {
   const token = req.header('Authorization');
 
   if (!token) {

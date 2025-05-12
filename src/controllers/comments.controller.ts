@@ -46,9 +46,7 @@ const getCommentsById = async (req: Request, res: Response): Promise<void> => {
     res.status(statusCodes.success).json({ comments });
   } catch (error: any) {
     logger.error(error.stack);
-    res
-      .status(statusCodes.queryError)
-      .json({ error: 'Exception occured while fetching comments' });
+    res.status(statusCodes.queryError).json({ error: 'Exception occured while fetching comments' });
   }
 };
 

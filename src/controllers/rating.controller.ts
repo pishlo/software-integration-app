@@ -32,8 +32,7 @@ const addRating = async (req: AuthRequest, res: Response): Promise<void> => {
 
     const ratings = await ratingModel.find({ movie_id });
 
-    const averageRating =
-      ratings.reduce((acc, item) => acc + item.rating, 0) / ratings.length;
+    const averageRating = ratings.reduce((acc, item) => acc + item.rating, 0) / ratings.length;
 
     await pool.query('UPDATE movies SET rating = $1 WHERE movie_id = $2;', [
       averageRating,
@@ -43,9 +42,7 @@ const addRating = async (req: AuthRequest, res: Response): Promise<void> => {
     res.status(statusCodes.success).json({ message: 'Rating added' });
   } catch (error: any) {
     logger.error(error.stack);
-    res
-      .status(statusCodes.queryError)
-      .json({ error: 'Exception occurred while adding rating' });
+    res.status(statusCodes.queryError).json({ error: 'Exception occurred while adding rating' });
   }
 };
 
