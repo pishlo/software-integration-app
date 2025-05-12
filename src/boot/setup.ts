@@ -1,9 +1,9 @@
 const express = require('express');
-const cors = require('cors'); 
+const cors = require('cors');
 import * as helmet from 'helmet';
 import mongoose from 'mongoose';
-const session = require('express-session'); 
-const morgan = require('morgan'); 
+const session = require('express-session');
+const morgan = require('morgan');
 
 import logger from '../middleware/winston';
 import notFound from '../middleware/notFound';
@@ -27,10 +27,8 @@ try {
   console.log('📡 Connecting to MongoDB...');
   mongoose.connect('mongodb://localhost:27017/epita');
   logger.info('✅ MongoDB Connected');
-
 } catch (error) {
   logger.error('❌ Error connecting to MongoDB: ' + error);
-
 }
 
 // Register core middlewares
@@ -76,7 +74,7 @@ const registerCoreMiddleWare = (): void => {
     app.use(notFound);
     logger.http('✅ Done registering all middlewares');
   } catch (err) {
-    logger.error('❌ Error thrown while executing registerCoreMiddleWare',err);
+    logger.error('❌ Error thrown while executing registerCoreMiddleWare', err);
     process.exit(1);
   }
 };
@@ -98,7 +96,9 @@ const startApp = (): void => {
     });
     handleError();
   } catch (err) {
-    logger.error(`startup :: Error while booting the application ${JSON.stringify(err, undefined, 2)}`);
+    logger.error(
+      `startup :: Error while booting the application ${JSON.stringify(err, undefined, 2)}`
+    );
     throw err;
   }
 };

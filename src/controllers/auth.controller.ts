@@ -24,7 +24,7 @@ const signup = async (req: Request, res: Response): Promise<void> => {
     const user = await newUser.save();
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json({ message: 'failed to save user',error });
+    res.status(500).json({ message: 'failed to save user', error });
   }
 };
 
