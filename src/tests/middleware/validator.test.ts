@@ -23,7 +23,7 @@ describe('validator Middleware', () => {
     jest.resetAllMocks();
   });
 
-  it('should remove creation_date and set today\'s date in req.body', () => {
+  it("should remove creation_date and set today's date in req.body", () => {
     mockReq.body = {
       creation_date: '2022-01-01',
       name: 'Test',
@@ -52,30 +52,30 @@ describe('validator Middleware', () => {
 
   it('should catch error and return 400 with "Bad request"', () => {
     const originalEntries = Object.entries;
-  
+
     // Force Object.entries() to throw
     jest.spyOn(Object, 'entries').mockImplementation(() => {
       throw new Error('Test error');
     });
-  
+
     (logger.error as jest.Mock).mockImplementation(() => {});
-  
+
     const mockReq = { body: { name: 'valid' } } as Request;
     const mockRes = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn(),
     } as unknown as Response;
-  
+
     const mockNext = jest.fn();
-  
+
     validator(mockReq, mockRes, mockNext);
-  
+
     expect(logger.error).toHaveBeenCalledWith(expect.any(Error));
     expect(mockRes.status).toHaveBeenCalledWith(statusCodes.badRequest);
     expect(mockRes.json).toHaveBeenCalledWith({ error: 'Bad request' });
     expect(mockNext).not.toHaveBeenCalled();
-  
+
     // Restore original implementation
     Object.entries = originalEntries;
-  });  
+  });
 });

@@ -58,7 +58,9 @@ describe('verifyToken Middleware Unit Tests', () => {
     const mockError = new Error('Invalid token');
 
     (mockReq.header as jest.Mock).mockReturnValue(mockToken);
-    (jwt.verify as jest.Mock).mockImplementation(() => { throw mockError; });
+    (jwt.verify as jest.Mock).mockImplementation(() => {
+      throw mockError;
+    });
 
     verifyToken(mockReq as any, mockRes as any, nextFn);
 

@@ -20,9 +20,7 @@ describe('Winston Logger Utility', () => {
   });
 
   it('should contain a console transport', () => {
-    const hasConsole = logger.transports.some(
-      (t) => t instanceof winston.transports.Console
-    );
+    const hasConsole = logger.transports.some((t) => t instanceof winston.transports.Console);
     expect(hasConsole).toBe(true);
   });
 
