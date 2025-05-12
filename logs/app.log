@@ -1,42 +1,30 @@
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:17:08.155Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:17:08.166Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:17:08.304Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:19:13.269Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:19:13.276Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:19:13.376Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:21:52.551Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:21:52.558Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:21:52.650Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:23:34.492Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:23:34.503Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:23:34.652Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:23:50.577Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:23:50.585Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:23:50.678Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:30:06.622Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:30:06.635Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:30:06.727Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:31:54.478Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:31:54.486Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:31:54.625Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:11.770Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:11.778Z"}
-{"level":"error","message":"PostgreSQL Connection Failed: err.message","timestamp":"2025-05-11T14:33:11.876Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:19.691Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:19.699Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:19.796Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:22.531Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:22.538Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:22.644Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:31.536Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:31.543Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:31.687Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:47.967Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:47.975Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:48.106Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:33:56.679Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:33:56.685Z"}
-{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T14:33:56.785Z"}
-{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T14:35:52.670Z"}
-{"level":"info","message":"Listening on 127.0.0.1:3000","timestamp":"2025-05-11T14:35:52.678Z"}
-{"level":"info","message":"PostgreSQL Connected","timestamp":"2025-05-11T14:35:52.984Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:06.085Z"}
+{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:06.094Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:06.137Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-05-11T15:32:14.382Z"}
+{"level":"info","message":"Listening on 127.0.0.1:8080","timestamp":"2025-05-11T15:32:14.390Z"}
+{"level":"error","message":"PostgreSQL Connection Failed","timestamp":"2025-05-11T15:32:14.433Z"}
+info: MongoDB Connected {"timestamp":"2025-05-11T21:02:11.790Z"}
+http: Done registering all middlewares {"timestamp":"2025-05-11T21:02:11.793Z"}
+info: Listening on 127.0.0.1:3000 {"timestamp":"2025-05-11T21:02:11.797Z"}
+error: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.20", user "postgres", database "si_dev_db", no encryption {"timestamp":"2025-05-11T21:02:11.907Z"}
+[2025-05-11T22:11:34.632Z] INFO: ✅ MongoDB Connected
+[2025-05-11T22:11:34.639Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T22:11:34.648Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T22:11:34.726Z] ERROR: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.20", user "postgres", database "si_dev_db", no encryption
+[2025-05-11T22:14:44.702Z] INFO: ✅ MongoDB Connected
+[2025-05-11T22:14:44.707Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T22:14:44.713Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T22:14:45.149Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:08:42.655Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:08:42.663Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:08:42.666Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:08:43.020Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:09:02.488Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:09:02.492Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:09:02.495Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:09:02.832Z] INFO: ✅ PostgreSQL Connected
+[2025-05-11T23:17:12.007Z] INFO: ✅ MongoDB Connected
+[2025-05-11T23:17:12.013Z] HTTP: ✅ Done registering all middlewares
+[2025-05-11T23:17:12.017Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-11T23:17:12.357Z] INFO: ✅ PostgreSQL Connected

@@ -1,0 +1,105 @@
+import { Request, Response } from 'express';
+import * as bcrypt from 'bcrypt';
+import * as jwt from 'jsonwebtoken';
+import userModel from '../models/userModel';
+import { Types } from 'mongoose';
+
+// Signup controller
+const signup = async (req: Request, res: Response): Promise<void> => {
+  const { username, email, password } = req.body;
+
+  if (!username || !password || !email) {
+    res.status(400).json({ error: 'missing information' });
+  }
+
+  const hash = bcrypt.hashSync(password, 10);
+
+  try {
+    const newUser = new userModel({
+      email,
+      username,
+      password: hash,
+    });
+
+    const user = await newUser.save();
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ message: 'failed to save user', error });
+  }
+};
+
+// Signin controller
+const signin = async (req: Request, res: Response): Promise<void> => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    res.status(400).json({ error: 'missing information' });
+  }
+
+  try {
+    const user = await userModel.findOne({ email });
+
+    if (!user || !bcrypt.compareSync(password, user.password)) {
+      res.status(400).json({ message: "Email or password don't match" });
+      return;
+    }
+
+    req.session.user = {
+      _id: (user._id as Types.ObjectId).toString(),
+    };
+
+    const token = jwt.sign(
+      { user: { id: user._id, email: user.email } },
+      process.env.JWT_SECRET_KEY as string,
+      { expiresIn: '1h' }
+    );
+
+    res.status(200).json({ token });
+  } catch (error) {
+    console.log('Error while getting user from DB', error);
+    res.status(500).json({ error: 'Failed to get user' });
+  }
+};
+
+// Get currently logged in user
+const getUser = async (req: Request, res: Response): Promise<void> => {
+  if (!req.session.user) {
+    res.status(401).json({ error: 'You are not authenticated' });
+  }
+
+  try {
+    if (!req.session.user) {
+      res.status(401).json({ error: 'You are not authenticated' });
+      return;
+    }
+
+    const user = await userModel
+      .findById(req.session.user._id, { password: 0 })
+      .populate('messages');
+
+    if (!user) {
+      res.status(400).json({ message: 'User not found' });
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.log('Error while getting user from DB', error);
+    res.status(500).json({ error: 'Failed to get user' });
+  }
+};
+
+// Logout
+const logout = async (req: Request, res: Response): Promise<void> => {
+  if (req.session.user) {
+    delete req.session.user;
+  }
+
+  res.status(200).json({ message: 'Disconnected' });
+};
+
+export default {
+  signup,
+  signin,
+  getUser,
+  logout,
+};

@@ -1,6 +1,18 @@
-const mongoose = require('mongoose');
+import { Schema, model, Document } from 'mongoose';
 
-const commentSchema = new mongoose.Schema(
+// Define a TypeScript interface for the Comment document
+export interface CommentDocument extends Document {
+  movie_id: number;
+  username: string;
+  comment: string;
+  title: string;
+  rating: number;
+  downvotes?: number;
+  upvotes?: number;
+  created_at?: Date;
+}
+
+const commentSchema = new Schema<CommentDocument>(
   {
     movie_id: {
       type: Number,
@@ -38,8 +50,11 @@ const commentSchema = new mongoose.Schema(
   {
     timestamps: {
       createdAt: 'created_at',
+      updatedAt: false, // not used based on original schema
     },
   }
 );
 
-module.exports = mongoose.model('Comment', commentSchema);
+const Comment = model<CommentDocument>('Comment', commentSchema);
+
+export default Comment;
