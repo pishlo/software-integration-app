@@ -22,7 +22,7 @@ import moviesRoutes from '../routes/movies.routes';
 import ratingRoutes from '../routes/rating.routes';
 import commentsRoutes from '../routes/comments.routes';
 
-const PORT = process.env.PORT || 8080;
+const PORT = parseInt(process.env.PORT || '8080', 10);
 const app = express();
 
 const connectToMongoDB = async (): Promise<void> => {
@@ -98,9 +98,9 @@ const startApp = async (): Promise<void> => {
   try {
     await connectToMongoDB();
     registerCoreMiddleWare();
-    app.listen(PORT, () => {
-      logger.info(`🟢 Listening on http://127.0.0.1:${PORT}`);
-    });
+    app.listen(PORT, '0.0.0.0', () => {
+      logger.info(`🟢 Listening on http://0.0.0.0:${PORT}`);
+    });    
     handleError();
   } catch (err) {
     logger.error(
