@@ -2,14 +2,15 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepare": "husky install",
     "test": "echo \"No tests yet\" && exit 0",
-    "start": "nodemon src/index.js",
-    "lint": "eslint . --ext .js",
-    "format": "prettier --write .",
-    "build": "echo \"No build step yet\" && exit 0"
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -34,12 +35,24 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.26.0",
-    "eslint": "^8.57.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/express-session": "^1.18.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.15.17",
+    "@types/pg": "^8.15.1",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
     "globals": "^16.1.0",
     "husky": "^8.0.0",
     "nodemon": "^3.1.9",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
