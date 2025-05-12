@@ -28,3 +28,129 @@ error: PostgreSQL Connection Failed: no pg_hba.conf entry for host "176.186.173.
 [2025-05-11T23:17:12.013Z] HTTP: ✅ Done registering all middlewares
 [2025-05-11T23:17:12.017Z] INFO: 🟢 Listening on http://127.0.0.1:3000
 [2025-05-11T23:17:12.357Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:03:21.636Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:03:21.641Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:03:21.644Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:03:22.164Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:03:34.630Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:03:34 +0000] "GET / HTTP/1.1" 404 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15"
+[2025-05-12T16:03:34.847Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:03:34 +0000] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 33 "-" "Safari/19617.2.4.11.12 CFNetwork/1492.0.1 Darwin/23.3.0"
+[2025-05-12T16:03:34.852Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:03:34 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 33 "-" "Safari/19617.2.4.11.12 CFNetwork/1492.0.1 Darwin/23.3.0"
+[2025-05-12T16:07:05.745Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:07:05.752Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:07:05.757Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:07:06.162Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:08:07.558Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:08:07 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:12:34.048Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:12:34.054Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:12:34.056Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:12:34.554Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:12:45.447Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:12:45 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:13:43.558Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:13:43.564Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:13:43.567Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:13:44.477Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:13:57.800Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:13:57 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:15:24.832Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:15:24.839Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:15:24.842Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:15:25.639Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:15:31.273Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:15:31 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:15:43.125Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:15:43 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:21:45.599Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:21:45.606Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:21:45.609Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:21:46.054Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:21:58.239Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:21:58 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:26:37.552Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:26:37.559Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:26:37.562Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:26:38.026Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:26:48.659Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:26:48 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:27:14.830Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:27:14.834Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:27:14.837Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:27:15.300Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:27:20.099Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:27:20 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:27:22.898Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:27:22 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:28:01.354Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:28:01.358Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:28:01.361Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:28:01.804Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:28:08.157Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:28:08 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:31:32.688Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:31:32.694Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:31:32.697Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:31:33.198Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:31:43.678Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:31:43 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:33:20.906Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:33:20.913Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:33:20.917Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:33:21.341Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:33:26.690Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:33:26 +0000] "POST /auth/signup HTTP/1.1" 500 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:36:12.969Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:36:12.975Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:36:12.978Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:36:13.543Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:36:22.678Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:36:22 +0000] "POST /auth/signup HTTP/1.1" 500 366 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:38:03.157Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:38:03 +0000] "POST /auth/signup HTTP/1.1" 200 255 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:38:49.905Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:38:49 +0000] "POST /auth/login HTTP/1.1" 500 30 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:42:25.588Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:42:25 +0000] "POST /auth/login HTTP/1.1" 500 30 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:44:40.902Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:44:40 +0000] "POST /auth/login HTTP/1.1" 500 30 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:44:58.706Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:44:58.710Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:44:58.712Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:44:59.180Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:45:18.340Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:45:18 +0000] "POST /auth/login HTTP/1.1" 200 231 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:47:38.717Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:47:38.723Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:47:38.726Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:47:39.249Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:49:15.484Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:49:15.488Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:49:15.490Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:49:16.156Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:49:34.825Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:49:34 +0000] "POST /auth/signup HTTP/1.1" 200 257 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:49:49.082Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:49:49 +0000] "POST /auth/login HTTP/1.1" 200 232 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T16:59:28.973Z] INFO: ✅ MongoDB Connected
+[2025-05-12T16:59:28.978Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T16:59:28.980Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T16:59:28.990Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T16:59:42.859Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:16:59:42 +0000] "POST /auth/signup HTTP/1.1" 200 257 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:00:01.098Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:00:01 +0000] "POST /auth/login HTTP/1.1" 200 232 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:01:16.456Z] INFO: ✅ MongoDB Connected
+[2025-05-12T17:01:16.461Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T17:01:16.462Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T17:01:16.467Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T17:11:11.612Z] ERROR: error: relation "users" does not exist
+    at /Users/skozaliev/Desktop/uni/softwareIntegration/final-project/app/node_modules/pg/lib/client.js:545:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-12T17:11:11.616Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:11:11 +0000] "POST /users/register HTTP/1.1" 500 50 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:23:04.305Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T17:23:04.344Z] INFO: ✅ MongoDB Connected
+[2025-05-12T17:23:04.347Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T17:23:04.350Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T17:23:24.632Z] ERROR: error: relation "users" does not exist
+    at /Users/skozaliev/Desktop/uni/softwareIntegration/final-project/app/node_modules/pg/lib/client.js:545:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-12T17:23:24.638Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:23:24 +0000] "POST /users/register HTTP/1.1" 500 50 "-" "PostmanRuntime/7.43.3"[2025-05-12T17:29:29.896Z] ERROR: error: function gen_salt(unknown) does not exist
+    at /Users/skozaliev/Desktop/uni/softwareIntegration/final-project/app/node_modules/pg/lib/client.js:545:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-12T17:29:29.898Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:29:29 +0000] "POST /users/register HTTP/1.1" 500 50 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:29:51.494Z] INFO: ✅ MongoDB Connected
+[2025-05-12T17:29:51.499Z] HTTP: ✅ Done registering all middlewares
+[2025-05-12T17:29:51.502Z] INFO: 🟢 Listening on http://127.0.0.1:3000
+[2025-05-12T17:29:51.509Z] INFO: ✅ PostgreSQL Connected
+[2025-05-12T17:29:57.921Z] ERROR: error: function gen_salt(unknown) does not exist
+    at /Users/skozaliev/Desktop/uni/softwareIntegration/final-project/app/node_modules/pg/lib/client.js:545:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-12T17:29:57.927Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:29:57 +0000] "POST /users/register HTTP/1.1" 500 50 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:31:12.596Z] INFO: USER ADDED
+[2025-05-12T17:31:12.648Z] INFO: ADDRESS ADDED
+[2025-05-12T17:31:12.698Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:31:12 +0000] "POST /users/register HTTP/1.1" 200 26 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:36:01.702Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:36:01 +0000] "POST /users/login HTTP/1.1" 200 210 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:36:25.128Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:36:25 +0000] "GET /users/logout HTTP/1.1" 404 33 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:37:37.611Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:37:37 +0000] "GET /movies HTTP/1.1" 401 24 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:37:59.762Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:37:59 +0000] "GET /movies HTTP/1.1" 200 13 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:39:12.685Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:39:12 +0000] "GET /movies HTTP/1.1" 200 1016 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:39:44.336Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:39:44 +0000] "GET /movies/top HTTP/1.1" 200 960 "-" "PostmanRuntime/7.43.3"
+[2025-05-12T17:40:03.061Z] HTTP: ::ffff:127.0.0.1 - - [12/May/2025:17:40:03 +0000] "GET /movies/me HTTP/1.1" 200 13 "-" "PostmanRuntime/7.43.3"

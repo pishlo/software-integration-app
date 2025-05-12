@@ -1,9 +1,12 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 import * as helmet from 'helmet';
 import mongoose from 'mongoose';
-const session = require('express-session');
-const morgan = require('morgan');
+import session from 'express-session';
+import morgan from 'morgan';
+
+import dotenv from 'dotenv';
+dotenv.config();
 
 import logger from '../middleware/winston';
 import notFound from '../middleware/notFound';
@@ -22,14 +25,17 @@ import commentsRoutes from '../routes/comments.routes';
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-// MongoDB connection
-try {
-  console.log('📡 Connecting to MongoDB...');
-  mongoose.connect('mongodb://localhost:27017/epita');
-  logger.info('✅ MongoDB Connected');
-} catch (error) {
-  logger.error('❌ Error connecting to MongoDB: ' + error);
-}
+const connectToMongoDB = async (): Promise<void> => {
+  try {
+    const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/epita';
+    console.log(`📡 Connecting to MongoDB at ${mongoUri}...`);
+    await mongoose.connect(mongoUri);
+    logger.info('✅ MongoDB Connected');
+  } catch (error) {
+    logger.error('❌ Error connecting to MongoDB:', error);
+    process.exit(1);
+  }
+};
 
 // Register core middlewares
 const registerCoreMiddleWare = (): void => {
@@ -87,9 +93,10 @@ const handleError = (): void => {
 };
 
 // Start the Express app
-const startApp = (): void => {
+const startApp = async (): Promise<void> => {
   console.log('🚀 Booting application...');
   try {
+    await connectToMongoDB();
     registerCoreMiddleWare();
     app.listen(PORT, () => {
       logger.info(`🟢 Listening on http://127.0.0.1:${PORT}`);
